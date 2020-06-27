@@ -1,0 +1,13 @@
+*.apk
+*.ap_
+*.class
+*.env
+*bin/
+*gen/
+*local.properties
+*.iml
+build/
+.idea
+.gradle
+*node_modules/
+.vscode

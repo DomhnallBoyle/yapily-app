@@ -1,0 +1,21 @@
+{
+  "name": "example-yapily-backend",
+  "scripts": {
+    "start": "nodemon server.js",
+    "debug": "node debug server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  },
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "ejs": "^2.7.1",
+    "express": "4.17.1",
+    "jsonwebtoken": "^0.2.0",
+    "mongoose": "5.6.9",
+    "mongoose-unique-validator": "^2.0.3",
+    "yapily_api": "https://github.com/yapily/yapily-sdk-npm.git",
+    "uuid": "^3.3.3",
+    "uuid-validate": "^0.0.3"
+  }
+}

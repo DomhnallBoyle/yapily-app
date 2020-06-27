@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_accounts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/list_item_account_placeholder"/>
+            <include layout="@layout/list_item_account_placeholder"/>
+            <include layout="@layout/list_item_account_placeholder"/>
+            <include layout="@layout/list_item_account_placeholder"/>
+            <include layout="@layout/list_item_account_placeholder"/>
+            <include layout="@layout/list_item_account_placeholder"/>
+            <include layout="@layout/list_item_account_placeholder"/>
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/accounts_recycler_view"
+        style="@style/standardLayout" />
+
+    <Button
+        android:id="@+id/connect_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="Connect Account"/>
+
+</RelativeLayout>

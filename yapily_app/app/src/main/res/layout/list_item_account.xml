@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="account"
+            type="com.example.yapily_app.models.BankAccount" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/account_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content"
+                    android:text="@{account.type + `\nA/N: ` + account.accountIdentifications.get(`account_number`) + `\nS/C: ` + account.accountIdentifications.get(`sort_code`)}"/>
+
+                <TextView
+                    android:id="@+id/reauthorise_account_text"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="25dp"
+                    android:textColor="#FF0000"
+                    android:visibility="invisible"
+                    android:text="Re-authorise Account Required"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/reauthorise_account_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:paddingTop="15dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:drawableTop="@drawable/refresh"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
