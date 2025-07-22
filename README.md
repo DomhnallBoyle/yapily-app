@@ -1,1 +1,1 @@
-Android App and NodeJS backend working with Yapily SDK
+Android App and NodeJS backend working with Yapily Open Banking SDK
