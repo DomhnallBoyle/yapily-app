@@ -11,7 +11,7 @@
     "dotenv": "^8.1.0",
     "ejs": "^2.7.1",
     "express": "4.17.1",
-    "jsonwebtoken": "^0.2.0",
+    "jsonwebtoken": "^9.0.3",
     "mongoose": "5.6.9",
     "mongoose-unique-validator": "^2.0.3",
     "yapily_api": "https://github.com/yapily/yapily-sdk-npm.git",
